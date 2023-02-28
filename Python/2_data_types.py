@@ -35,20 +35,20 @@ print(type(alphabets))  # <class 'list'>
 sex = ('man', 'woman')
 print(type(sex))  # <class 'tuple'>
 
-## 2.5. 매핑(Mapping Type) - dict
+## 2.4. 매핑(Mapping Type) - dict
 
 
-## 2.6. 세트(Set Type) - set, frozenset
+## 2.5. 세트(Set Type) - set, frozenset
 
 
-## 2.7. 불리언(Boolean Type) - bool
+## 2.6. 불리언(Boolean Type) - bool
 # 참과 거짓을 나타내는 불리언 자료형에는 True, False 두 가지가 있다.
 is_empty = True
 is_discharged = False
 print(f"is_empty: {type(is_empty)}")
 print(f"is_discharged: {type(is_discharged)}")
 
-## 2.8. 이진수(Binary Type) - bytes, bytearray, memoryview
+## 2.7. 이진수(Binary Type) - bytes, bytearray, memoryview
 # 추후 다룰 예정
 
-## 2.9. None(None Type) - NoneType
+## 2.8. None(None Type) - NoneType
