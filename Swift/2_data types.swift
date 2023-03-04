@@ -1,6 +1,6 @@
 // 2. 자료형(Data Types)
 
-// 2.1. 정수형
+// 2.1. 정수(Integers)
 // 2.1.1. Int - 64비트 정수
 var MtHallaSeaLevel: Int = 1950
 print("MtHallaSeaLevel: \(MtHallaSeaLevel)")  // MtHallaSeaLevel: 1950
@@ -10,12 +10,12 @@ var worldPopulation: UInt = 8000000000
 print("worldPopulation: \(worldPopulation)")  // worldPopulation: 8000000000
 
 
-// 2.2.실수형
-// 2.2.1. Float - 32비트 부동소수
+// 2.2. 부동 소수점 숫자(Float-Point Numbers)
+// 2.2.1. Float - 32비트 부동 소수점 숫자
 var piFloat: Float = 3.1415
 print("piFloat: \(piFloat)")  // piFloat: 3.1415
 
-// 2.2.2. Double - 63비트 부동소수
+// 2.2.2. Double - 63비트 부동 소수점 숫자
 var latitudeSeoul: Double = 37.532600
 print("latitudeSeoul: \(latitudeSeoul)")  // latitudeSeoul: 37.5326
 

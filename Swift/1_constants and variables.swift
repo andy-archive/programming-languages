@@ -29,7 +29,7 @@ var a = 0, b = 1, c = 2
 let maxA = 10, maxB = 20, maxC = 30
 
 
-// 1.4. 타입 명시(타입 어노테이션, Type Annotations)와 타입 추론(Type Inference)
+// 1.4. 타입 명시와 타입 추론(Type Annotations and Type Inference)
 // 1.4.1. 타입 명시(Type Annotations)
 // 상수나 변수를 선언할 때, 저장하려는 값의 자료형을 명확하게 하기 위하여 타입 명시를 사용한다.
 var capitalOfCountry: String
@@ -43,7 +43,7 @@ var currentTemperature, currentAirQualityIndex: Double
 // 스위프트는 따로 자료형(타입)을 명시하지 않아도 적절한 자료형을 알아서 지정한다.
 let ageLimit = 19  // Int로 추론
 
-// 단, 실수형(부동소수점)에 대한 타입을 선언하지 않을 경우, Double으로 추론한다
+// + 단, 실수형(부동소수점)에 대한 타입을 선언하지 않을 경우, Double으로 추론한다
 let pi = 3.1415  // pi는 Float이 아닌 Double 자료형으로 추론된다.
 
 
