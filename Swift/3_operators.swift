@@ -4,6 +4,7 @@
 // 3.1.1. 단항 연산자(Unary Operator)
 // 단일한 항목(single targets)에 작동하는 연산자.
 // 접두사(prefix)와 접미사(postfix)로 나누어짐.
+var a, b, c
 -a
 b
 c!
@@ -69,5 +70,27 @@ x * y  // 8
 -21 % 4     -> -21 == 4 * -5 + '-1' // -1
 -21 % -4    -> -21 == -4 * 5 + '-1' // -1
 
--21 (mod) -4 -> -21 + -4 * -5 == '-1'  //
 -21 (mod) 4 -> -21 + 4 * 6 == '3'  //
+-21 (mod) -4 -> -21 + -4 * -5 == '-1'  //
+
+
+// 3.5. 단항 연산자(Unary Operator)
+// 3.5.1. 단항 뺄셈 연산자(Unary Minus Operator)
+// 값이 양수면 음수로, 음수면 양수로 바꾸어 반환한다.
+var seoulTemperatureCelsius = 13  // 13
+var minusSeoulTemperatureCelsius = -seoulTemperatureCelsius // -13
+
+// 3.5.2. 단항 덧셈 연산자(Unary Plus Operator)
+// 값의 변경 없이 그 값을 있는 그대로 반환한다.
+// 실제로 아무런 동작을 하지는 않지만, 위의 단항 뺄셈 연산자에 대한 대칭성을 위해 사용할 수 있다.
+var tokyoTemperatureCelsius = 5  // 5
+var plusTokyoTemperatureCelsius = +tokyoTemperatureCelsius  // 5
+var minusTokyoTemperatureCelsius = -tokyoTemperatureCelsius // -5
+
+
+// 3.6. 복합 대입 연산자(Compound Assignment Operators)
+// 대입 연산자와 다른 연산자를 합하여 두 가지 연산을 동시에 할 수 있다.
+var sum = 20  // 20
+// sum = sum + 30을 아래와 같이 표현할 수 있다.
+// sum의 값에 30을 더하여 다시 sum에 저장하는 것이다.
+sum += 30  // 50
