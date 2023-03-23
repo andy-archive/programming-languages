@@ -50,3 +50,8 @@
 <br>
 
 ## 4. 문자열과 문자(Strings and Characters)
+### 4.1. 문자열(String)
+#### 4.1.1. 문자열 리터럴(String Literals)
+#### 4.1.2. 여러 줄 문자열 리터럴(Multiline String Literals)
+#### 4.1.3. 여러 줄 문자열의 특수 문자 리터럴(Special Charaters in String Literals)
+#### 4.1.4. 확장된 문자열 구분기호 (Extended String Delimiters)
