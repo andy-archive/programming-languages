@@ -15,7 +15,7 @@ print("worldPopulation: \(worldPopulation)")  // worldPopulation: 8000000000
 var piFloat: Float = 3.1415
 print("piFloat: \(piFloat)")  // piFloat: 3.1415
 
-// 2.2.2. Double - 63비트 부동 소수점 숫자
+// 2.2.2. Double - 64비트 부동 소수점 숫자
 var latitudeSeoul: Double = 37.532600
 print("latitudeSeoul: \(latitudeSeoul)")  // latitudeSeoul: 37.5326
 
@@ -24,9 +24,11 @@ print("latitudeSeoul: \(latitudeSeoul)")  // latitudeSeoul: 37.5326
 
 // 2.3. Boolean - 부울
 // 참 또는 거짓을 뜻하는 논리적인 자료형이다.
-let appleIsRed = true
-let strawberryIsBlue = false
+let isAppleRed = true
+let isStrawberryBlue = false
 
+print(isAppleRed) // true
+print(isStrawberryBlue) // false
 
 // 2.4. nil - 값이 없는 상태
 var serverResponseCode: Int? = 404

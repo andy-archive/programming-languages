@@ -24,8 +24,8 @@ c!
 
 
 // 3.2. 대입 연산자(Assignment Operator)
-let maximumOrder = 7  // 7
 var guestOrder = 3  // 3
+let maximumOrder = 7  // 7
 
 // 3.2.1. 일반적인 대입
 // 대입 연산자 우항의 변수 값을 좌항 변수의 값으로 초기화/업데이트 한다.
