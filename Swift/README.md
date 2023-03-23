@@ -46,3 +46,7 @@
 #### 3.7.5. 크거나 같음(a >= b)
 #### 3.7.6. 작거나 같음(a <= b)
 ### 3.8. 삼항 조건 연산자(Ternary Conditional Operator)
+
+<br>
+
+## 4. 문자열과 문자(Strings and Characters)
