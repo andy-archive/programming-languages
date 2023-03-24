@@ -12,3 +12,4 @@
 ### 2.2. 자료형(Data Types)
 ### 2.3. 연산자(Operators)
 ### 2.4. 문자열과 문자(Strings and Characters)
+### 2.5. 콜렉션 타입(Collection Types)
