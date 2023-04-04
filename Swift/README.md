@@ -58,3 +58,6 @@
 #### 4.1.4. 확장된 문자열 구분기호 (Extended String Delimiters)
 
 ## 5. 콜렉션 타입(Collection Types)
+<br>
+
+## 6. 함수(Functions)
