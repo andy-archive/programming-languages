@@ -31,6 +31,14 @@ a ? b : c  // condition ? true : false
 var guestOrder = 3  // 3
 let maximumOrder = 7  // 7
 
+// 대입 연산자는 값을 반환하지 않기에 아래는 유효하지 않다.
+// 이러한 특징은 등호 연산자(==)가 쓰여야 할 곳에 할당 연산자(=)가 쓰이는 것을 방지한다.
+"""
+if x = y {
+    // This is NOT valid. Because 'x = y' does not return a value.
+}
+"""
+
 // 3.2.1. 일반적인 대입
 // 대입 연산자 우항의 변수 값을 좌항 변수의 값으로 초기화/업데이트 한다.
 guestOrder = maximumOrder  // 7
