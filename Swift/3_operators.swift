@@ -4,24 +4,28 @@
 // 3.1.1. 단항 연산자(Unary Operator)
 // 단일한 항목(single targets)에 작동하는 연산자.
 // 접두사(prefix)와 접미사(postfix)로 나누어짐.
+"""
 var a, b, c
 -a
 b
 c!
+"""
 
 // 3.1.2. 이항 연산자(Binary Operator)
 // 2개의 항목(two targets)에 작동하는 연산자.
 // 2개의 항목 사이에 위치해야 하므로 모두 삽입사(infix)에 해당함.
+"""
 3 + 5
 4 - 9
-
+"""
 
 // 3.1.3. 삼항 연산자(Ternary Operator)
 // 3개의 항목(three targets)에 작동하는 연산자.
 // 스위프트에서는 '삼항 조건 연산자(ternary conditional operator)'라는
 // 오직 하나의 삼항 연산자만 갖고 있음.
-// a ? b : c  // condition ? true : false
-
+"""
+a ? b : c  // condition ? true : false
+"""
 
 // 3.2. 대입 연산자(Assignment Operator)
 var guestOrder = 3  // 3
@@ -31,40 +35,51 @@ let maximumOrder = 7  // 7
 // 대입 연산자 우항의 변수 값을 좌항 변수의 값으로 초기화/업데이트 한다.
 guestOrder = maximumOrder  // 7
 
-
 // 3.2.2. 튜플의 대입
 // 우항의 변수 개수가 여러 개의 값이 있는 튜플이라면,
 // 튜플의 각각의 요소는 여러 개의 상수나 변수로 각각 대입 된다.
 var (x, y) = (2, 4)
+"""
 x * y  // 8
-
+"""
 
 // 3.3. 산술 연산자(Arithmetic Operators)
 // 사칙연산에 필요한 연산자 4가지는 아래와 같다.
 
 // 3.3.1. 덧셈(+)
+"""
 10 + 4  // 14
+"""
 // 덧셈의 경우 숫자뿐 아니라 문자열의 연결(String concatenation)도 지원한다.
-"String " + "concatenation."  //
+"String " + "concatenation." // "String concatentation"
 
-// 3.3.2. 뻴셈(-)
+// 3.3.2. 뺄셈(-)
+"""
 10 - 4  // 6
+"""
 
 // 3.3.3. 곱셈(*)
+"""
 10 * 4  // 40
+"""
 
 // 3.3.4. 나눗셈(/)
 // 나눗셈의 경우 타입 추론(type inference)에 의해 정수일 경우 정수를, 실수일 경우 실수를 반환한다.
+"""
 10 / 4  //  2
 10.0 / 4.0  //  2.5
-
+"""
 
 // 3.4. 나머지 연산자(Remainder Operator)
-// 나머지 연산자는 좌항 변수 값에 들어갈 우항 변수 값의 배수가 몇인지 계산하고
+// 나머지 연산자(a % b)는 좌항 변수(a)에 들어갈 우항 변수(b)의 배수가 몇인지 계산하고
 // 남은 값, 즉 나머지(remainder)를 반환한다.
--21 % 4  // -1
 // -21 -> 4 * (-5) + (-1)
+"""
+-21 % 4 // -1
+"""
 
+
+//
 // 주의) 나머지(remainder) 연산자는 모듈로(modulo) 연산자와 계산 방법에서 차이가 있어 혼동하면 안된다.
 // 나머지 연산에서는 양수든 음수든, 절댓값이 같지만 모듈로는 서로 다르다.
 """
@@ -94,29 +109,43 @@ var minusTokyoTemperatureCelsius = -tokyoTemperatureCelsius // -5
 var sum = 20  // 20
 // sum = sum + 30을 아래와 같이 표현할 수 있다.
 // sum의 값에 30을 더하여 다시 sum에 저장하는 것이다.
+"""
 sum += 30  // 50
+"""
 
 
 // 3.7. 비교 연산자(Comparison Operators)
 // 아래와 같은 비교 연산자가 있으며 참/거짓에 따라 부울 자료형으로 반환한다.
 
 // 3.7.1. 같음(a == b)
+"""
 1 == 1  // true
+"""
 
 // 3.7.2. 다름(a != b)
+"""
 1 != 2  // false
+"""
 
 // 3.7.3. 큼(a > b)
+"""
 1 > 2  // false
+"""
 
 // 3.7.4. 작음(a < b)
+"""
 1 < 2  // true
+"""
 
 // 3.7.5. 크거나 같음(a >= b)
+"""
 1 >= 2  // false
+"""
 
 // 3.7.6. 작거나 같음(a <= b)
+"""
 1 <= 2 // true
+"""
 
 
 // 3.8. 삼항 조건 연산자(Ternary Conditional Operator)
