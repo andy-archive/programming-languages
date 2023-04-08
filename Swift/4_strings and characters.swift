@@ -3,40 +3,47 @@
 // 4.1. 문자열(String)
 // 4.1.1. 문자열 리터럴(String Literals)
 // 상수 aString을 String 타입으로 추론
-let aString = "You will be never be able to escape from your heart."
+let aString = "This is a string."
 // String 타입으로 명시할 수도 있다.
-let anotherString: String = "Life is the moment we are living now."
+let anotherString: String = "I just wrote my second string."
 
 
 // 4.1.2. 여러 줄 문자열 리터럴(Multiline String Literals)
 // 여러 줄로 된 문자열이 필요할 경우 큰따옴표 3개를 둘러싸서 표현할 수 있다.
 let aQuote = """
-"Drink and enjoy yourself," said the alchemist, noticing that
-the boy was feeling happier. "Rest well tonight, as if you were
-a warrior preparing for combat. Remember that wherever your
-heart is, there you will find your treasure."
+Alice was beginning to get very tired of sitting by her sister
+on the bank, and of having nothing to do: once or twice she had
+peeped into the book her sister was reading, but it had no pic
+tures or conversations in it, "and what is the use of a book,"
+thought Alice, "without picutres or conversations?"
 """
 
 // 여러 줄 문자열에서 줄바꿈(\n)을 포함하면 줄바꿈 또한 문자열의 값으로 나타난다.
 // 소스코드를 쉽게 읽고자 줄바꿈을 쓰되, 줄바꿈이 문자열의 일부가 되지 않을 경우
 // 라인 끝마다 역슬래시(\) 쓰면 된다.
 let anotherQuote = """
-"Drink and enjoy yourself," said the alchemist, noticing that \
-the boy was feeling happier. "Rest well tonight, as if you were \
-a warrior preparing for combat. Remember that wherever your \
-heart is, there you will find your treasure."
+In another moment down went Alice after it, never once considering \
+how in the world she was to get out again.
+
+The rabbit-hole went straight on like a tunnel for some way, and \
+then dipped suddenly down, so suddenly that Alice had not a ...
 """
 
 // 여러 줄 문자열의 들여쓰기는 맨끝의 닫는 따옴표(""")를 기준으로 공백을 무시할 수 있다.
 // 만약 닫는 따옴표보다 추가로 공백이 더 들어가면 그 공백은 추가 된다.
 let theOtherQuote = """
-    "Drink and enjoy yourself," said the alchemist, noticing that
-    the boy was feeling happier. "Rest well tonight, as if you were
-    a warrior preparing for combat. Remember that wherever your
-    heart is, there you will find your treasure."
+    There was nothing so very remarkable in that; nor did Alice
+    think it so very much out of the way to hear the Rabbit say
+      to itself, "Oh dear! Oh dear! I shall be too late!"
     """
 
 // 닫는 따옴표보다 더 앞에 있으면 에러를 반환한다.
+let rabbitHoleQuote = """
+    Alice was not a bit hurt, and she jumped up on to her feet
+    in a moment : she looked up, but it wddddddfadfadfadfadfsas all dark overhead;
+    before her was another long passage, and the White Rabbit was
+still in sight, hurrying down it.
+    """
 // error: insufficient indentation of line in multi-line string literal
 
 
