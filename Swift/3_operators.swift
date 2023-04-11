@@ -177,3 +177,30 @@ if question {
 
 // 삼항 조건 연산자는 '간결하다'라는 특징이 있지만 남용에 주의해야 한다.
 // 여러 인스턴스 구문을 한 줄의 삼항 조건 연산자에 모두 표현하는 것을 피해야 한다.
+
+// 3.9. Nil 결합 연산자(Nil-Coalescing Operator)
+// 'a ?? b'인데, 옵셔널 a가 값이 있으면 a를 언래핑 하고
+// a가 nil일 경우 default 값인 b를 반환한다.
+// a는 항상 옵셔널 타입이여야 하고
+// b는 a와 같은 자료형이어야 한다.
+
+a ?? b
+
+// 삼항 조건 연산자로 표현하면 아래와 같다
+a != nil ? a! : b
+
+let defaultFontColor = "black"
+var userDefinedColor: String? // 기본값이 nil
+
+// userDefinedColor의 타입이 Optional<String>이고,
+// 값이 nil이므로 defaultFontColor의 값을 반환
+var colorToUse = userDefinedColor ?? defaultFontColor // black
+
+// 처음에 a의 값이 nil이 아니면 b는 절대로 반환되지 않는다.
+// 이러한 경우를 연산 생략(short-circuit evaluation)이라 하며,
+// 아래와 같은 경고 메시지를 띄운다.
+// Left side of nil coalescing operator '??' has non-optional type 'String', so the right side is never used
+
+// 이후 값을 대입하면 실제 그 값을 반환한다.
+userDefinedColor = "blue"
+colorToUse = userDefinedColor ?? defaultFontColor // blue
