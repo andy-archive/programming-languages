@@ -48,7 +48,7 @@ still in sight, hurrying down it.
 
 
 // 4.1.3. 여러 줄 문자열의 특수 문자 리터럴(Special Charaters in String Literals)
-// 백슬래시(\)
+// 백슬래시(\)를 활용하면 일반 문자열 리터럴 안에 쌍따옴표(")를 넣을 수 있다.
 let anAdmiralQuote = "\"Those who seek death shall live. Those who seek life shall die.\" - Admiral Yi Sun-sin"
 // "Those who seek death shall live. Those who seek life shall die." - Admiral Yi Sun-sin
 
